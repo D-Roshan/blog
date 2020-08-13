@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <title> Login Portal </title>
+        <style>
+            input[type=submit]{
+                border: none;
+                border-radius: 5px;
+                background-color: rgba(32, 60, 155, 0.39);
+            }
+            input[type=submit]:hover{
+                background-color: rgba(32, 61, 155, 0.671);
+            }
+            input{
+                text-decoration: none;
+                outline: none;
+                padding-left:15px;
+            }
+            #footer{
+                position: absolute;
+                bottom: 0px;
+                width: 100%;
+                padding-left: 10px;
+                
+            }
+            #hpLink{
+                text-decoration: none;
+                color:black;
+            }
+            #hpLink:hover{
+                color:rgb(63, 63, 63);
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        
+
+
+        <div style="float:left;padding-top:150px;padding-left: 100px;">  
+           <h4 class="display-4">Login</h4> <br/>
+           <form name="login" action="" method="POST"> 
+            <i class="fa fa-navicon" class="iconsInput" style="color: grey;" aria-hidden="true" ></i>
+                <input type="text" name="uname" size=30 placeholder="Enter Username"/> 
+                    <div style="padding-bottom: 20px;"></div>
+                    <i class="fa fa-navicon" class="iconsInput" style="color: grey;" aria-hidden="true" ></i>
+                <input type="password" name="pwd" size=30 placeholder="Enter Passwords"/> 
+                <div style="padding-bottom: 20px;"></div>
+                
+                &nbsp;&nbsp;&nbsp;
+                <input type="submit" value="Login" style="padding-right:30px;padding-left:30px;"/>
+            </form>
+        </div> 
+
+            <div style="float:right;"> 
+            <img src='https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=753&q=80'  width="900" height="655"/>
+        </div>
+     
+        <div id="footer">
+            <a id="hpLink" href="index.html">Back to HomePage</a> &nbsp; 
+        </div>
+    </body>
+</html>
