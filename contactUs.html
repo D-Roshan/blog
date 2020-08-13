@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="icon" href="https://itsalljournalism.com/wp-content/uploads/2018/04/itsalljournalism_1500.png" type="image/x-icon" />
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -31,34 +32,45 @@
     </head>
     <body>
         <h2 class="display-2 container-fluid"> Project 2025 </h2>
-        <div class="jumbotron">
-            <h1> You can contact us by email at : </h1>
-             
-            <ul> 
-
-                <li> <img src="https://www.suitdoctors.com/wp-content/uploads/2016/11/dummy-man-570x570.png" width="100px" /> <a class="footerLinks" href="mailto:a.a.keshaw@gmail.com"> Keshaw </a> </li>
-                <br/>
-                <li> <img src="https://www.suitdoctors.com/wp-content/uploads/2016/11/dummy-man-570x570.png" width="100px" /> <a class="footerLinks" href="mailto:test@mail.com"> User 2 </a></li>
-            </ul>
-            
-        </div>
-
-        <h2 class="display-2">
-            Or by a form!
-        </h2>
-
+        
+    <div style="background-image: url(https://scx2.b-cdn.net/gfx/news/hires/2019/2-nature.jpg);"> 
+        <h3 class="display-4" style="color:whitesmoke;text-align: justify;">
+            Contact us through this form!
+        </h3>
+        
         <form style="padding-left: 50px;" name="contactUs" method="POST" action="">
             <i class="fa fa-navicon" class="iconsInput" style="color: grey;" aria-hidden="true" ></i>
             <input class="inputs"  type="text" name="name" placeholder="Enter your name" size=50/>  <br/><br/>
             <i class="fa fa-navicon" class="iconsInput" style="color: grey;" aria-hidden="true" ></i>
             <input class="inputs"  type="email" name="mail" placeholder="Enter your Email" size=50/> <br/><br/>
             <i class="fa fa-navicon" class="iconsInput" style="color: grey;" aria-hidden="true" ></i>
-            <input class="inputs"  type="textarea" name="message" placeholder="Message Topic" size=75/>  <br/><br/>
+            <input class="inputs"  type="textarea" name="message" placeholder="Message Topic" size=75 list="msgTopic" />  <br/><br/>
             <i class="fa fa-navicon" class="iconsInput" style="color: grey;" aria-hidden="true" ></i>
             
-            <textarea name="message" placeholder="Enter your Message" rows="5" cols="81"> </textarea> <br/><br/>
+            <textarea name="message" placeholder="" rows="5" cols="81">Enter your Message: </textarea> <br/>
             
-            <input type="submit" value="Submit form"><br/><br/>
-        </form>
+            <datalist id="msgTopic">
+                <option value="Copyrights"> </option>
+                <option value="Bugs"> </option>
+                <option value="Mis information "> </option>
+                <option value="Re correction request"> </option>
+                <option value="Others"> </option>
+            </datalist>
+            <input type="submit" value="Submit form">
+        </form><br/>
+    </div>
+    <br/> 
+
+    <div class="jumbotron">
+        <h1> Or by email at : </h1>
+         
+        <ul> 
+
+            <li> <img src="https://www.suitdoctors.com/wp-content/uploads/2016/11/dummy-man-570x570.png" width="100px" /> <a class="footerLinks" href="mailto:a.a.keshaw@gmail.com"> Keshaw </a> </li>
+            <br/>
+            <li> <img src="https://www.suitdoctors.com/wp-content/uploads/2016/11/dummy-man-570x570.png" width="100px" /> <a class="footerLinks" href="mailto:test@mail.com"> User 2 </a></li>
+        </ul>
+        
+    </div>
     </body>
 </html>
