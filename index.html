@@ -6,9 +6,18 @@
         <!-- CSS only -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.5.1.js"> </script>
+    <script>
+        $(document).ready(function(){
 
+            $("#close").click(function(){
+                $("#alarmCookieAndSessions").fadeOut;
+            });
+
+        })
+    </script>
         <style>
         a{
             text-decoration: none;
@@ -23,8 +32,33 @@
             padding-top: 10px;
             padding-bottom: 10px;
         }
+        #footer{
+            position: relative;
+            bottom: 0px;
+            width: 100%;
+            background-color: #e2e2e2b6;
+            padding: 10px;
+           
+        }
+        .spacer{
+            padding:50px;
+        }
+        #alarmCookieAndSessions{
+            position: fixed;
+                    bottom: 30px;
+                    width: 100%;
+                    background-color: #e2e2e2b6;
+                    padding: 5px;
+                    text-align: center;
+        }
+        #close{
+            outline: none;
+            border: none;
+        }
+        
 
         </style>
+        
     </head>
     <body>
         <div id="header">
@@ -158,6 +192,15 @@
                 </div>
             </div>
 
+        </div>
+        <div class="spacer"> </div>
+        <div id="alarmCookieAndSessions" > 
+            <img src="https://static.wixstatic.com/media/296718_3c4a04d0e5384fb5a481ad93dd7483eb~mv2.gif" width="40px"/> ~~ This blog uses cookies. By visiting this website, you agree to allow cookies to be stored on your device. ~~
+        <span style="float:right"> <button id="close"> <img id="crossExit" src="https://cdn2.iconfinder.com/data/icons/arrows-and-universal-actions-icon-set/256/cancel_circle-512.png" width="30px"/> </button> </span>
+        </div>
+        <div id="footer">
+            
+                Blogs under development 2020 - <span id="currentYear"> 2020 </span>
         </div>
 
 
